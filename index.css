@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #f8f8f8;
+}
+
+.logo{
+    height: 40px;
+    width: 150px;
+    margin-left: 40px;
+}
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-middle {
+    flex: 3;
+    text-align: center;
+}
+
+.navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type="text"] {
+    width: 75%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #00B5B7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-right: 40px;
+    border-radius: 8px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cart-btn{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.second-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.left-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.hamburger {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.right-menu {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+    font-size: 18px;
+}
