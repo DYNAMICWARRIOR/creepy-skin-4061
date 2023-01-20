@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script src="scripts/index.js"></script>
 </head>
 <body>
     <!--navbar and search menu-->
@@ -21,26 +22,119 @@
             <img class="cart-btn" src="images/cart.png" alt="Cart">
         </div>
     </div>
+    <hr>
 
-    <!--second navbar-->
 
-    <div class="second-navbar">
-        <div class="left-menu">
-            <button class="hamburger">&#9776;</button>
-            <span>Shop by category</span>
-        </div>
-        <div class="right-menu">
-            <ul>
-                <li>Best Sellers</li>
-                <li>Brands</li>
-                <li>Deals</li>
-                <li>Blogs</li>
-                <li>Gift Card</li>
-                <li>Customer Support</li>
-                <li>Store locator</li>
-            </ul>
-        </div>
+    <!--second nav bar-->
+    <div class="menu-bar">
+        <ul>
+            
+            <li><a href="#"><button class="hamburger">&#9776; <span>Shop by category</span></button> <i class="fas fa-caret-down"></i></a>
+    
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Sports Nutrition <i class="fas fa-caret-right"></i></a>
+    
+                            <div class="menu-1">
+                                <ul>
+                                    <h3>Proteins</h3>
+                                    <li><a href="#">Whey Proteins</a></li>
+                                    <li><a href="#">Beginners Whey Protein</a></li>
+                                    <li><a href="#">Whey Protein Isolate</a></li>
+                                    <li><a href="#">Raw Whey Proteins</a></li>
+                                    <li><a href="#">Plant Proteins</a></li>
+                                    <li><a href="#">Protein for Women</a></li>
+                                    <li><a href="#">Protein Blends</a></li>
+                                    <li><a href="#">Casein Proteins</a></li>
+                                    <li><a href="#">Soy Proteins</a></li>
+                                    <div class="menu-1">
+                                        <h3>Gainers</h3>
+                                        <ul>
+                                            <li><a href="#">Weight Gainers</a></li>
+                                            <li><a href="#">Mass Gainers</a></li>
+                                            <li><a href="#">Herbal Weight Gainers</a></li>
+                                            <li><a href="#">Protein Foods</a></li>
+                                            <li><a href="#">Peanut Butter</a></li>
+                                            <li><a href="#">Muesli</a></li>
+                                            <li><a href="#">Protein Shakes</a></li>
+                                            <li><a href="#">Oats</a></li>
+                                            <li><a href="#">Cereals</a></li>
+                                            <li><a href="#">Granola</a></li>
+                                            <li><a href="#">Protein Bars</a></li>
+                                            <li><a href="#">Protein Water</a></li>
+                                            <div class="menu-1">
+                                                <h3>Pre/Post Workout</h3>
+                                                <ul>
+                                                    <li><a href="#">Pre-Workout</a></li>
+                                                    <li><a href="#">Creatine</a></li>
+                                                    <li><a href="#">BCAAs</a></li>
+                                                    <li><a href="#">Carb Blends</a></li>
+                                                    <li><a href="#">Electrolytes</a></li>
+                                                    <li><a href="#">EAA</a></li>
+                                                    <li><a href="#">Nitric Oxide</a></li>
+                                                    <div class="menu-1">
+                                                        <h3>Other Supports</h3>
+                                                        <ul>
+                                                            <li><a href="#">Citrulline Malate</a></li>
+                                                            <li><a href="#">Workout Essentials</a></li>
+                                                            <li><a href="#">Fat Burners</a></li>
+                                                            <li><a href="#">Consult Services</a></li>
+                                                            <li><a href="#">L Carnitine</a></li>
+                                                            <li><a href="#">Multivitamins for Bodybuilding</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                   
+                                    
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <hr>
+                        <li><a href="#">Vitamins & Supplements</a></li>
+                        <hr>
+                        <li><a href="#">Ayurveda & Herbs</a></li>
+                        <hr>
+                        <li><a href="#">Health Food & Drinks</a></li>
+                        <hr>
+                        <li><a href="#">Fitness</a></li>
+                        <hr>
+                        <li><a href="#">Wellness</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Store Locator</a></li>
+        </ul>
     </div>
 
+    <hr>
+
+
+
+<!--image slide-->
+
+    <div id="slider">
+        <ul id="slideWrap">
+            <li><img src="images/top_slide/topslide1.png" alt=""></li>
+            <li><img src="images/top_slide/topslide2.png" alt="image2"></li>
+            <li><img src="images/top_slide/topslide3.png" alt="image3"></li>
+            <li><img src="images/top_slide/topslide4.png" alt="image4"></li>
+            <li><img src="images/top_slide/topslide5.png" alt="image5"></li>
+            <li><img src="images/top_slide/topslide6.png" alt="image6"></li>
+            <li><img src="images/top_slide/topslide7.png" alt="image7"></li>
+        </ul>
+        <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+    </div>
 </body>
 </html>
