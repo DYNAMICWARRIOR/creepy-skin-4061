@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="scripts/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="scripts/index.js"></script>
+
 </head>
+
 <body>
-    <!--navbar and search menu-->
     <div class="navbar">
         <div class="navbar-left">
-            <img class="logo" src="images/logo.png" alt="Logo">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="Logo">
+            </a>
+        
         </div>
+
         <div class="navbar-middle">
             <input type="text" placeholder="Search for Products & Brands">
         </div>
+
+
         <div class="navbar-right">
             <button>Login</button>
-            <img class="cart-btn" src="images/cart.png" alt="Cart">
         </div>
+
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>
+
+    </div>
+    <!--second navbar-->
+    <hr>
+    <!--second nav bar-->
+    <div class="menu-bar">
+        
+        <ul>
+            <a href="#"><button class="hamburger">&#9776; <span>Shop by category</span></button> <i
+                    class="fas fa-caret-down"></i></a>
+            <li>
+
     </div>
     <hr>
 
@@ -32,6 +64,7 @@
             
             <li><a href="#"><button class="hamburger">&#9776; <span>Shop by category</span></button> <i class="fas fa-caret-down"></i></a>
     
+
                 <div class="dropdown-menu">
                     <ul>
                         <li>
@@ -89,6 +122,24 @@
                                             </div>
                                         </ul>
                                     </div>
+
+    
+    
+                                </ul>
+                            </div>
+    
+                        </li>
+                        <hr>
+                        <li><a class="second-menu-list" href="#">Vitamins & Supplements</a></li>
+                        <hr>
+                        <li><a class="second-menu-list" href="#">Ayurveda & Herbs</a></li>
+                        <hr>
+                        <li><a class="second-menu-list" href="#">Health Food & Drinks</a></li>
+                        <hr>
+                        <li><a class="second-menu-list" href="#">Fitness</a></li>
+                        <hr>
+                        <li><a class="second-menu-list" href="#">Wellness</a></li>
+
                                    
                                     
                                 </ul>
@@ -105,6 +156,7 @@
                         <li><a href="#">Fitness</a></li>
                         <hr>
                         <li><a href="#">Wellness</a></li>
+
                     </ul>
                 </div>
             </li>
@@ -116,6 +168,41 @@
             <li><a href="#">Customer Support</a></li>
             <li><a href="#">Store Locator</a></li>
         </ul>
+
+    </div>
+    
+    <hr>
+
+
+    <!--image slides-->
+
+    <!--image slide-->
+    
+    <div id="slider">
+        <ul id="slideWrap">
+            <li><img src="images/top_slide/topslide1.png" alt=""></li>
+            <li><img src="images/top_slide/topslide2.png" alt="image2"></li>
+            <li><img src="images/top_slide/topslide3.png" alt="image3"></li>
+            <li><img src="images/top_slide/topslide4.png" alt="image4"></li>
+            <li><img src="images/top_slide/topslide5.png" alt="image5"></li>
+            <li><img src="images/top_slide/topslide6.png" alt="image6"></li>
+            <li><img src="images/top_slide/topslide7.png" alt="image7"></li>
+        </ul>
+        <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+    </div>
+
+    <hr>
+    <!--image slide over-->
+
+    <!--product items-->
+
+    <div class="flash-deal">
+        <h2>Flash Deal!</h2>
+        <div class="shop" id="shop">
+        
+        
+
 
     <div class="second-navbar">
         <div class="left-menu">
@@ -202,9 +289,137 @@
                 <li>Customer Support</li>
                 <li>Store locator</li>
             </ul>
+
         </div>
 
     </div>
+    
+    <hr>
+
+
+    <!--first card images-->
+
+    <div class="first-card">
+        <img src="images/first_card/card1.png" alt="">
+        <img src="images/first_card/card2.png" alt="">
+        <img src="images/first_card/card3.png" alt="">
+        <img src="images/first_card/card4.png" alt="">
+    </div>
+
+
+    <!--first card images over-->
+
+    <!--Second Slide-->
+
+
+    <div id="slider">
+        <ul id="slideWrap">
+            <li><img src="images/second_slide/ss1.png" alt="image2"></li>
+            <li><img src="images/second_slide/ss2.png" alt="image2"></li>
+            <li><img src="images/second_slide/ss3.png" alt="image3"></li>
+        </ul>
+        <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+    </div>
+
+
+    <!--trending now part-->
+
+    <div class="flash-deal">
+        <h2>Trending Now!</h2>
+        <div class="shop" id="shop">
+    
+    
+        </div>
+    </div>    
+
+    <!--Footer-->
+
+    <footer id="footer">
+        <div class="col">
+            <h4>HEALTHKART</h4>
+            <div class="text"> <a href="about.html">About Us</a> </div>
+            <div class="text"> <a href="#"> Contact Us</a> </div>
+            <div class="text"> <a href="#">Refer & Earn</a> </div>
+            <div class="text"> <a href="#">Loyalty Program</a> </div>
+            <div class="text"> <a href="#">HK Consult</a> </div>
+            <div class="text"> <a href="#">Blogs,Videos & More</a> </div>
+            <div class="text"> <a href="#">Brand Directory</a> </div>
+            <div class="text"> <a href="#">Authenticity Guaranteed</a> </div>
+            <div class="text"> <a href="#"> Careers</a> </div>
+        </div>
+        <div class="col">
+            <h4>BRANDS</h4>
+            <div class="text"> <a href="#">MuscleBlaze</a> </div>
+            <div class="text"> <a href="#">TrueBasics</a> </div>
+            <div class="text"> <a href="#">JustHer</a> </div>
+            <div class="text"> <a href="#">Nouriza</a> </div>
+            <div class="text"> <a href="#">Gritzo</a> </div>
+            <div class="text"> <a href="#"> bGREEN</a> </div>
+        </div>
+        <div class="col">
+            <h4>HEALTH & FITTNESS</h4>
+            <div class="text"> <a href="#">Bodybuilding</a> </div>
+            <div class="text"> <a href="#"> Weight Loss</a> </div>
+            <div class="text"> <a href="#">Hair & Skin Care</a> </div>
+            <div class="text"> <a href="#"> Sports Nutrtion</a> </div>
+            <div class="text"> <a href="#">Vitamin & Supplements</a> </div>
+            <div class="text"> <a href="#">Ayurveda & Herbs</a> </div>
+            <div class="text"> <a href="#">Health Food & Drinks</a> </div>
+            <div class="text"> <a href="#">Fittness</a> </div>
+            <div class="text"> <a href="#">Wellness</a> </div>
+            <div class="text"> <a href="#">Consult Plans</a> </div>
+        </div>
+        <div class="col">
+            <h4>POLICIES</h4>
+            <div class="text"> <a href="#">Terms & Conditions</a> </div>
+            <div class="text"> <a href="#">Delivery Policy</a> </div>
+            <div class="text"> <a href="#">Privacy Policy</a> </div>
+            <div class="text"> <a href="#">Returns Policy</a> </div>
+        </div>
+        <div class="col">
+            <h4>QUICK LINKS</h4>
+            <div class="text"> <a href="#">My Account</a> </div>
+            <div class="text"> <a href="#">Track Your Order</a> </div>
+            <div class="text"> <a href="#">Store Locator</a> </div>
+            <div class="text"> <a href="#">HK Cash</a> </div>
+            <div class="text"> <a href="#">HK Coupons</a> </div>
+            <div class="text"> <a href="#">FAQs</a> </div>
+            <div class="text"> <a href="#">Sell On HealthKart</a> </div>
+        </div>
+        <div class="col">
+            <h4>ABOUT HEALTHKART</h4>
+            <p>HealthKart.com is India’s largest online health & fitness store for men and women. Shop online from
+                the latest collections of health, fitness and similar products featuring the best brands.</p>
+            <div class="col upper">
+                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                <p>Be the first one to receive amazing offers, deals and news</p>
+            </div>
+            <input class="input" type="text" placeholder="Enter your email">
+            <span><button class="subcribe_btn">SUBSCRIBE</button></span>
+            <div id="socialMedia">
+                <h4>CONNECT WITH US</h4>
+                <div>
+    
+                    <a href="https://www.facebook.com/healthkart"><img
+                            src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/healthkart/?hl=en"><img
+                            src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/instagram.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/healthkart/"><img
+                            src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/linkedIn_logo.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/healthkart"><img
+                            src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/twitter.svg" alt=""></a>
+                    <a href="https://www.youtube.com/user/healthkart"><img
+                            src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/youtube.svg" alt=""></a>
+                    <a href="https://in.pinterest.com/healthkart/"><img
+                            src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pinterest.svg" alt=""></a>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+
 
     <hr>
 
@@ -226,4 +441,7 @@
         <a id="next" href="#">&#8811;</a>
     </div>
 </body>
+<script src="scripts/Data.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/index1.js"></script>
 </html>
