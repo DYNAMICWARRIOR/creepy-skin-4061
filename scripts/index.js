@@ -57,6 +57,7 @@ window.onload = function() {
 responsiveSlider();
 }
 
+
 //image slide over
 //----------------------////
 
@@ -176,4 +177,7 @@ calculation();
 
 
 //--------------------------------------///
+
+
+//image slide over
 
