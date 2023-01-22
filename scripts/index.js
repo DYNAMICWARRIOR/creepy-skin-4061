@@ -1,3 +1,10 @@
+///login page////
+
+
+
+
+
+
 //image slide
 
 
@@ -57,10 +64,8 @@ window.onload = function() {
 responsiveSlider();
 }
 
-
 //image slide over
 //----------------------////
-
 let shop = document.getElementById("shop");
 
 /**
@@ -177,7 +182,4 @@ calculation();
 
 
 //--------------------------------------///
-
-
-//image slide over
 

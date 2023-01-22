@@ -6,50 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    
 </head>
 <body>
-    <div id="loginpopup">
-        <div id="backimg"></div>
-        
-        <div id="box">
-            <div id="left">
-                <div id="leftimg">
-                    
-                </div>
-            </div>
-            <div id="right">
-                <div id="login">
-                    <div>
-                        <div id="login2">
-                            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/login/Closs.svg" id="cross" />
-                            <ul>
-                                <li id="tab-1">Login</li>
-                                
-                            </ul>
-                            <div id="loginsection">
-                                <p id="errortext"></p>
-                                <form onsubmit="login(event)" id="login-form">
-                                    <div id="parent">
-                                        <div>Mobile Number</div>
-                                        <div id="relative">
-                                            <input id="user" type="tel" tabindex="0" placeholder="Enter 10 digit no.">
-                                        </div>
-                                        <p id="errortext"></p>
-                                    </div>
-                                    <div id="parentfield" style="justify-content: center;">
-                                        <input type="submit" value="Login" id="submit" />
-                                    </div>
-                                </form>
-                                <div id="or">
-                                    <span>or</span>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <span>or use your account</span>
+                <input type="text" placeholder="Phone No." id="phoneNo" />
+                <input type="text" placeholder="Username" id="username" />
+                <button onclick="checkOTP()">Login</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <img src="images/login_bg/login1.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
+
+
+
 </body>
+<script src="login.js"></script>
 </html>

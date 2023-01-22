@@ -69,7 +69,7 @@ button {
         margin-right: 60px;
         border: none;
         margin-top: 5px;
-    
+        
 }
 
 button:hover {
@@ -121,6 +121,7 @@ button:hover {
     align-items: center;
     margin-left: 30px;
     margin-top: 0;
+    
 }
 
 .dropdown-menu>ul>li{
@@ -134,6 +135,13 @@ button:hover {
     text-align: center;
 
     position: relative;
+}
+
+.left-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
 }
 
 .menu-bar ul li a {
@@ -182,7 +190,7 @@ button:hover {
     width: 250px;
     padding: 10px;
     display: grid;
-    margin: auto;
+    
     background-color: aliceblue;
 }
 

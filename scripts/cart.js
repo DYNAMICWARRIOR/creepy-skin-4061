@@ -42,7 +42,7 @@ let generateCartItems = () => {
           <div class="title-price-x">
             <h4 class="title-price">
               <p>${name}</p>
-              <p class="cart-item-price">$ ${price}</p>
+              <p class="cart-item-price">₹ ${price}</p>
             </h4>
             <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
           </div>
@@ -55,7 +55,7 @@ let generateCartItems = () => {
             </div>
           </div>
 
-          <h3>$ ${item * price}</h3>
+          <h3>₹ ${item * price}</h3>
         
         </div>
       </div>
@@ -157,10 +157,11 @@ let TotalAmount = () => {
         return filterData.price * item;
       })
       .reduce((x, y) => x + y, 0);
+      localStorage.setItem("totalAmount", amount);
 
     return (label.innerHTML = `
-    <h2>Total Bill : $ ${amount}</h2>
-    <button class="checkout">Checkout</button>
+    <h2>Total Bill : ₹ ${amount}</h2>
+    <button class="checkout"><a href="checkout.html">Checkout</a></button>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `);
   } else return;
